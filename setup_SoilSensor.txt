@@ -7,3 +7,6 @@ python3 -V
 
 #install python3 if not already
 sudo apt-get install python3
+
+#run python file
+sudo python3 Sensor-SoilMoisture.py
