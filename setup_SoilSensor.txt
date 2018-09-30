@@ -1,0 +1,9 @@
+# apt is an Advanced Packaging Tool library to perform 
+#installation/removing/uprading of software packages
+sudo apt-get install
+
+#check you have python installed
+python3 -V
+
+#install python3 if not already
+sudo apt-get install python3
