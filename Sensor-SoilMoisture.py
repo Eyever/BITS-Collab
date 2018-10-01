@@ -16,14 +16,14 @@ def callback_soil(pin_SoilSensor):
     else:
         print('Water detected')
 
+# Tells script to watch gpio pin and let us know when the pin goes both HIGH (Rising) or LOW (falling)
+GPIO.add_event_detect(pin_SoilSensor, GPIO.BOTH, callback=callback_soil, bouncetime=1000)
+
 # Infinte loop to keep our script running
 while(True):
     try:
-        # Tells script to watch gpio pin and let us know when the pin goes HIGH or LOW
-        GPIO.add_event_detect(pin_SoilSensor, GPIO.BOTH, callback=callback_soil, bouncetime=1000)
+       time.sleep(2)
     except:
         GPIO.cleanup()
         print("ERR_RANGE")
         #exit(0)
-
-    #time.sleep(5)
