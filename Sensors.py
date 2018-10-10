@@ -19,7 +19,7 @@ GPIO.setup(pin_HumiditySensor, GPIO.IN)
 
 def callback(pin_SoilSensor):
 
-    water_volume = get_temperature_humidity
+    water_volume = get_temperature_humidity()
 
     if GPIO.input(pin_SoilSensor):
         print('No water detected')
