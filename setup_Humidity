@@ -1,0 +1,18 @@
+#check you have python installed
+python3 -V
+
+sudo apt-get install
+
+#install python3 if not already
+sudo apt-get install python
+
+#install python package installer
+sudo apt-get install python3-pip
+
+#install adafruit's interface for the Humidity sensor.
+sudo pip3 install Adafruit_DHT
+cd Adafruit_Python_DHT
+sudo python setup.py install
+
+#run file
+python3 Sensors.py
